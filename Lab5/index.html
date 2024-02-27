@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 5 - Cole Becker</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="main.js">   
+    </script>
+</head>
+<!-- Loads the prompts from the firstLast Function -->
+<body onload= firstLast()> 
+        <h2 id="welcome"></h2>
+    <img src="images/me.jpg" alt="A Headshot of Cole Becker" 
+     id = "headshot" onclick= picEnlarge() onmouseleave = picReset()><br>
+<!-- Modifies the image size -->    
+
+<!-- The below is the content for the drop downn menus-->
+    <div class="dropDown">
+        <button onclick=itmDD() class="DDButton">BTM Course Info</button>
+            <div id = "itmDD" class = "content" onmouseover="this.innerHTML = 'click me'" onmouseleave="this.innerHTML = 'hover here'">
+                <a href="https://www.torontomu.ca/information-technology-management/student-resources/course-studies/">
+                    BTM Program Page</a>
+                <a href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">
+                    BTM Application Page</a>
+                <a class = "badLink"> BTM Course Schedule</a>
+            </div>
+        </div>
+    <div class="dropDown">
+        <button onclick=courseDD() class="DDButton">Specific courses</button>
+        <div id = "courseDD" class = "content" onmouseover="this.innerHTML = 'click me'" onmouseleave="this.innerHTML = 'hover here'">
+            <a class="badLink">
+                ITM680</a>
+            <a class="badLink">
+                ITM900</a>
+            <a class="badLink"> 
+                ITM825</a>
+            </div>
+    </div>
+    <div class="dropDown">
+        <button onclick=tmuDD() class="DDButton">TMU Info</button>
+        <div id = "tmuDD" class = "content" onmouseover="this.innerHTML = 'click me'" onmouseleave="this.innerHTML = 'hover here'">
+            <a class="badLink">
+                Campus Info</a>
+            <a class="badLink">
+                Contact</a>
+            </div>
+    </div> 
+</body>
+</html>

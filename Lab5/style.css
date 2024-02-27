@@ -1,0 +1,37 @@
+/*Styles for drop down button*/
+.DDButton {
+font-size: 20px;
+
+}
+/* The container needed to position the dropdown content */
+.dropDown {
+position: relative;
+display: inline-block;
+}
+
+/* Borrowed dropdown content */
+.content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: auto;
+}
+
+/* Links inside the dropdown */
+.content a {
+display: block;
+}
+
+/* Changes the color of the links on drop down and on visit. Styles are aligned*/
+.content a:hover {background-color: #f1f1f1;
+                  color: blueviolet;}
+
+.content a:visited {color: blueviolet;}
+
+/*Generates the drop down menu*/
+.show {display:block;}
+
+/*Used to align non working links in style*/
+.badLink {
+    text-decoration: underline;
+}

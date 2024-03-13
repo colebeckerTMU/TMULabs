@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(1, 50, 1, 0.816);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#intro{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+fieldset{
+    background-color: rgba(92, 193, 92, 0.816);
+    color:black;
+    max-width: 465px;
+}
+
+input,select,option,textarea,button{
+    background-color: rgba(243, 254, 243, 0.816);
+}

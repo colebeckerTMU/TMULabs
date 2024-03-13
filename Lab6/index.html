@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 6</title>
+    <link rel="stylesheet" href="style.css"> <!--External Style Sheet Link-->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form id="labForm">
+    <p id="intro">Hi There, Please Fill out the Below</p>
+        <fieldset> <!-- Using Fieldsets for visual breaks in continuity of questions -->
+            <h3>About You:</h3>
+            <label for="fName">First Name:</label><br>
+            <input type="text" id="fName" value="Joe"><br><br>
+            <label for="lName">Last Name:</label><br>
+            <input type="text" id="lName" value="Shmoe"><br><br>
+            <label for="age"> Date of Birth:</label><br>
+            <input type="date" id="age" value="yyyy-mm-dd"><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" value="example@mail.com"><br><br>
+        </fieldset><br>
+        <fieldset>
+            <h3>Please answer the below:</h3>
+            <label for="job">Occupation:</label><br>
+            <input id="job" type="text" value="Title"><br><br>
+
+            <label for="industry">Which industry are you in?</label><br> <!--dropdown select industry field-->
+            <select id="industry" name="industry">
+                <option value="auto">Automotive</option>
+                <option value="construction">Construction</option>
+                <option value="edu">Education</option>
+                <option value="energy">Energy</option>
+                <option value="ent">Entertainment</option>
+                <option value="health">Healthcare</option>
+                <option value="hosp">Hospitality</option>
+                <option value="info">Information</option>
+                <option value="manu">Manufacturing</option>
+                <option value="tech">Technology</option>
+                <option value="tourism">Tourism</option>
+                <option value="trans">Transportation</option>
+                <option value="retail">Retail</option>
+                <option value="estate">Real Estate</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="other">If other, please specify:</label>
+            <input id="other" type="text"><br>
+        <p>
+            How long have you been in this role?<br> <!--Radio buttons for employment duration-->
+            <input id="lessOneYr" type="radio" name="duration" value="lessOneYr">
+                <label for="lessOneYr">Less than one year</label><br>
+            <input id="oneTwoYr" type="radio" name="duration" value="oneTwoYr">
+                <label for="oneTwoYr">1-2 Year(s)</label><br>
+            <input id="twoFourYr" type="radio" name="duration" value="twoFourYr">
+                <label for="twoFourYr">2-4 Years</label><br>
+            <input id="fivePlus" type="radio" name="duration" value="fivePlus">
+                <label for="fivePlus">5+ Years</label>
+        </p>
+        <p>
+            Which of the below activities do you do on a daily basis?<br><!--Multi Select-->
+            <input type="checkbox" id="jobTask1" name="jobTask1">
+            <label for="jobTask1">Use Microsoft Office applications</label><br> 
+            <input type="checkbox" id="jobTask2" name="jobTask2">
+            <label for="jobTask2">Use email - For any purpose</label><br>
+            <input type="checkbox" id="jobTask3" name="jobTask3">
+            <label for="jobTask3">Perform any data operations - Collection, analysis.. etc</label><br>
+            <input type="checkbox" id="jobTask4" name="jobTask4">
+            <label for="jobTask4">Commute to work</label><br>
+            <input type="checkbox" id="jobTask5" name="jobTask5">
+            <label for="jobTask5">Drink Coffee</label><br>
+        </p>
+        <p>
+            Is there anything else you'd like to add?<br>
+            <textarea id="extraInfo" name="extraInfo" row="5" cols="32"></textarea> 
+            <!-- wanted to visually match the above question with the box size^-->
+        </p>
+        </fieldset><br><!--Buttons are outside the fieldset to indicate that they submit all-->
+        <button type="submit" value="Submit" onclick=submitHandler()>Submit</button>
+        <button type="reset" value="Reset">Reset</button><br><br>
+    </form>
+</body>
+</html>
